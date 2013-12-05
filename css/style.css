@@ -1,0 +1,67 @@
+/*-------------------------------------------------------------------------------------------------
+General
+-------------------------------------------------------------------------------------------------*/
+html {
+  font-size: 62.5%;
+  font-family: 'Times New Roman', serif;
+  color:#333;
+}
+
+body {
+	font-size:36px;
+	font-size:1.6rem;
+	background-color:white;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Times New Roman', serif;
+  font-weight: 600;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+h1 {
+  font-size: 40px;
+  font-size: 4rem;
+}
+h2 {
+  font-size: 30px;
+  font-size: 3.0rem;
+}
+h3 {
+  font-size: 20px;
+  font-size: 2.0rem;
+}
+h4 {
+  font-size: 15px;
+  font-size: 1.5rem;
+}
+
+/*-------------------------------------------------------------------------------------------------
+Layout
+-------------------------------------------------------------------------------------------------*/
+#wrap {
+	width:960px;
+	margin:0px auto;
+  background-color: #B0C4DE; 
+}
+#header {
+  text-align: center;
+  background-color: #DDA0DD;
+}
+#choose {
+  text-align: center;
+  width: 960px;
+  /*background-image: url('images/photo.jpg')*/
+  /*background-color: #B0C4DE; */
+}
+.grid-row {
+	width:425px;
+	margin-right:50px;
+	float:left;
+}

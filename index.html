@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset='UTF-8'>
+
+	<title>Volunteer Sign Up</title>
+	
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<!-- <link rel="stylesheet" href="css/features.css" type="text/css"> -->
+	
+</head>
+
+<body>
+<div id='wrap'>
+	
+	<div id='header'><h1>Volunteer Now!</h1></div>
+	<div id='choose'> 
+		<h2>Choose if you're an individual or a group:</h2>
+		<!-- <div class='grid-row'> -->
+			
+			<!-- <div id='individual-wrapper' class='grid-col span_1_of_2'> -->
+				<input CHECKED type='radio' name='type' value='individual' id='individual'> 
+				<label for='individual'>Individual</label>
+			<!-- </div>
+			
+			<div id='group-wrapper' class='grid-col span_1_of_2'> -->
+				<input type='radio' name='type' value='group' id='group'> 
+				<label for='group'>Group</label>
+			<!-- </div>
+			
+		</div> close grid-row' --> 
+
+		<div class='clear'></div>
+	</div>
+	</section>
+
+		<h2>General Contact Information</h2>
+	
+			<div class='form_entry'>
+			
+				<label for='first_name'>First Name:</label>
+				<input id='first_name' name='first_name' class='validate[required]' type='text'>
+				
+				<br><br>
+				
+				<label for='last_name'>Last Name:</label>
+				<input id='last_name' name='last_name' class='validate[required]' type='text'>
+
+				<br><br>
+
+				<label for='preferred_name'>Name you actually go by:</label>
+				<input id='preferred_name' name='preferred_name' type='text'>
+				
+				<br><br>
+			</div> <!-- close form_entry --> 			
+
+</div> <!-- close wrap -->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script> 
+
+<script src="js/volunteer.js"></script> 
+
+</body>
+
+</html>
