@@ -10,7 +10,7 @@ html {
 body {
 	font-size:36px;
 	font-size:1.6rem;
-	background-color:white;
+	background-color:#B0C4DE;
 }
 
 h1,
@@ -48,17 +48,18 @@ Layout
 #wrap {
 	width:960px;
 	margin:0px auto;
-  background-color: #B0C4DE; 
+  background-image: url('images/photo.jpg');
+  /*background-color: #B0C4DE; */
 }
 #header {
   text-align: center;
-  background-color: #DDA0DD;
+  /*background-color: #DDA0DD;*/
 }
 #choose {
   text-align: center;
   width: 960px;
-  /*background-image: url('images/photo.jpg')*/
-  /*background-color: #B0C4DE; */
+  /*background-image: url('images/photo.jpg');*/
+  /* background-color: #020202; */
 }
 .grid-row {
 	width:425px;
