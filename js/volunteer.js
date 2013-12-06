@@ -35,8 +35,25 @@ $('input[name=type').change(function() {
 
 // If you want a <button/> with an id of myButton that when clicked will cause you to scroll to a <div/> with and id of myDiv over the course of half a second:
 
-$('#individual').click(function() {
-   //optionally remove the 500 (which is time in milliseconds) of the
-   //scrolling animation to remove the animation and make it instant
-   $.scrollTo($('#customize'), 500);
+// $('#individual').click(function(){
+//     $('html, body').animate({
+//         scrollTop: $( $.attr(this, '#customize') ).offset().top
+//     }, 500);
+//     return false;
+// });
+
+// $('#individual').click(function() {
+//    //optionally remove the 500 (which is time in milliseconds) of the
+//    //scrolling animation to remove the animation and make it instant
+//    $.scrollTo($('#customize'), 500);
+// });
+
+function scrollToAnchor(aid){
+    var aTag = $("a[name='"+ aid +"']");
+    $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+}
+
+$("#individual").click(function() {
+   scrollToAnchor('#customize');
 });
+

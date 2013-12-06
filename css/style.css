@@ -10,7 +10,7 @@ html {
 body {
   font-size:36px;
   font-size:1.6rem;
-  background-color:#B0C4DE;
+  background-color:#ffffff;
 }
 
 h1,
@@ -90,7 +90,8 @@ Layout
   width:960px;
   margin:0px auto;
   /*background-image: url('images/photo.jpg');*/
-  background-color: #B0C4DE; 
+  /*background-color: #B0C4DE; */
+  background-color: #ffffff;
 }
 #header {
   text-align: center;

@@ -15,12 +15,13 @@
 <div id='wrap'>
 	
 	<div id='header'>
-		<h1>Volunteer Now!</h1>
+		<img src="images/header.gif">
+		<!-- <h1>Volunteer Now!</h1> -->
 	</div>
 	
 <section id='pick'>
-		
-	<h3>Choose if you're an individual or a group</h3>
+	<img src="images/choose.gif">
+	<!-- <h3>Choose if you're an individual or a group</h3> -->
 	<!-- Note that I am intentionally going against DRY principles by immediately creating a distinction between individual and group volunteer applications, even though there is a lot of parallel information being gathered. I am designing the form this way becuase I think people will be more excited to fill out the form if they immediately are able to distinguish themselves as an individual or a group. -->
 
 	<!-- <div id='choose'>  -->
@@ -28,17 +29,16 @@
 	<div class='grid-row'>
 			
 		<div id='individual-wrapper' class='grid-col span_1_of_2'>
-			<p><img src="images/photo.jpg" height="200px" width="200px"></p>
+			<!-- <p><img src="images/one.gif" height="200px" width="200px"></p> -->
 			<input CHECKED type='radio' name='type' value='individual' id='individual'> 
-			<label for='individual'>Individual</label> 
+			<label for='individual'>Individual<p><img src="images/one.gif" height="200px" width="200px"></p></label> 
 				  
 			
 		</div>
 		
 		<div id='group-wrapper' class='grid-col span_1_of_2'>
-			<p><img src="images/group.jpg" height="200px" width="200px"></p>
 			<input type='radio' name='type' value='group' id='group'> 
-			<label for='group'>Group</label>
+			<label for='group'>Group<p><img src="images/moreThanOne.gif" height="200px" width="200px"></p></label>
 		</div>
 			
 	</div> <!-- close grid-row' -->
