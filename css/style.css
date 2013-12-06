@@ -3,21 +3,21 @@ General
 -------------------------------------------------------------------------------------------------*/
 html {
   font-size: 62.5%;
-  font-family: 'Times New Roman', serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color:#333;
 }
 
 body {
-	font-size:36px;
-	font-size:1.6rem;
-	background-color:#B0C4DE;
+  font-size:36px;
+  font-size:1.6rem;
+  background-color:#B0C4DE;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-family: 'Times New Roman', serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 600;
   margin: 0px;
   padding: 0px;
@@ -87,8 +87,8 @@ table th {
 Layout
 -------------------------------------------------------------------------------------------------*/
 #wrap {
-	width:960px;
-	margin:0px auto;
+  width:960px;
+  margin:0px auto;
   /*background-image: url('images/photo.jpg');*/
   background-color: #B0C4DE; 
 }
@@ -102,23 +102,47 @@ Layout
   /*background-image: url('images/photo.jpg');*/
   /* background-color: #020202; */
 }
+/*#customize {
+  text-align: center;
+  width: 960px;
+  background-image: url('images/photo.jpg');
+  /* background-color: #020202; 
+}*/
+/*.grid-row {
+  width:425px;
+  margin-right:50px;
+  float:left;
+}*/
 .grid-row {
-	width:425px;
-	margin-right:50px;
-	float:left;
+  clear: both;
+  padding: 0px;
+  margin: 0px;
 }
-.grid-group:before, .grid-group:after {
-  content: "";
-  display: table;
+
+/*  SECTIONS  ============================================================================= */
+
+.section {
+  clear: both;
+  padding: 0px;
+  margin: 0px;
+}
+
+/*  GROUPING  ============================================================================= */
+
+
+.grid-group:before,
+.grid-group:after {
+    content:"";
+    display:table;
 }
 .grid-group:after {
-  clear: both;
+    clear:both;
 }
 .grid-group {
-  zoom: 1;
-  /* For IE 6/7 (trigger hasLayout) */
-
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
 }
+/*  GRID COLUMN SETUP   ==================================================================== */
+
 .grid-col {
   display: block;
   float: left;
@@ -128,27 +152,41 @@ Layout
   margin-left: 1.6%;
   padding-bottom: 10px;
 }
-.grid-col:first-child {
-  margin-left: 0;
-}
+
+.grid-col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
+
+
 /*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
+
 @media only screen and (max-width: 480px) {
-  .grid-col {
+  .grid-col { 
     margin: 1% 0 1% 0%;
   }
 }
 /*  GRID OF TWO   ============================================================================= */
+
+
 .span_2_of_2 {
   width: 100%;
 }
+
 .span_1_of_2 {
   width: 49.2%;
 }
-/*-------------------------------------------------------------------------------------------------
-Group vs. Individual Choice
-customize-individual
-customize-group
--------------------------------------------------------------------------------------------------*/
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+  .span_2_of_2 {
+    width: 100%; 
+  }
+  .span_1_of_2 {
+    width: 100%; 
+  }
+}
+
+/*  CUSTOMIZE   ============================================================================= */
+
 #customize h3 {
   margin-bottom: 25px;
 }
@@ -162,9 +200,10 @@ customize-group
 #customize .span_1_of_4label {
   display: block;
 }
+/* changed the padding-left and padding right to 0px to make it really into two columns */
 #customize .span_1_of_2 {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 #customize h3 {
   margin-top: 10px;
@@ -194,4 +233,9 @@ customize-group
 }
 #customize input[type=text] {
   width: 100%;
+}*/
+/*  AVAILABILITY   ============================================================================= */
+#available .span_1_of_2 {
+  padding-left: 0px;
+  padding-right: 0px;
 }

@@ -11,7 +11,7 @@ So on page load, save them in a variable, then default to the ship form
 // Save
 
 // MINE: ship - individual and instant - group 
-$('textarea[name=message').html("Hi Friend!&#10;&#10;Enjoy a class at the Women's Coding Collective - on me! They've got all sorts of courses on web development, from HTML and CSS to JavaScript and WordPress. I think you'll learn a lot! &#10;&#10;Love, Your Pal");
+$('textarea[name=message').html("You can put a message here.");
 var individual    = $('#customize_individual');
 var group = $('#customize_group');
 
@@ -33,18 +33,10 @@ $('input[name=type').change(function() {
 
 });
 
-/*
-$('#payment-form input, #payment-form select').each(function() {
+// If you want a <button/> with an id of myButton that when clicked will cause you to scroll to a <div/> with and id of myDiv over the course of half a second:
 
-	var key   = 'gift_certificates_index_' + $(this).attr('name');
-	var value = localStorage.getItem(key);
-	$(this).val();
-
+$('#individual').click(function() {
+   //optionally remove the 500 (which is time in milliseconds) of the
+   //scrolling animation to remove the animation and make it instant
+   $.scrollTo($('#customize'), 500);
 });
-
-$('#payment-form input, #payment-form select').change(function() {
-	var key   = 'gift_certificates_index_' + $(this).attr('name');
-	var value = $(this).val();
-	localStorage.setItem(key,value);
-});
-*/
