@@ -92,6 +92,7 @@ Layout
   /*background-image: url('images/photo.jpg');*/
   /*background-color: #B0C4DE; */
   background-color: #ffffff;
+  padding-left: 200px;
 }
 #header {
   text-align: center;
@@ -210,17 +211,6 @@ Layout
   margin-top: 10px;
   margin-bottom: 5px;
 }
-#customize #state_container {
-  float: left;
-  width: 40%;
-}
-#customize #zip_container {
-  float: left;
-  width: 60%;
-}
-#customize #zip {
-  width: 100%;
-}
 #customize textarea {
   font-size: 12px;
   font-size: 1.2rem;
@@ -234,9 +224,43 @@ Layout
 }
 #customize input[type=text] {
   width: 100%;
-}*/
+}
+/*  SHARED ADDRESS   ============================================================================= */
+#shared_address #state_container {
+  float: left;
+  width: 40%;
+}
+#shared_address #zip_container {
+  float: left;
+  width: 60%;
+}
+#shared_address #zip {
+  width: 100%;
+}
+#shared_address #city {
+  width: 60%;
+}
+#shared_address textarea {
+  font-size: 12px;
+  font-size: 1.2rem;
+  width: 100%;
+}
 /*  AVAILABILITY   ============================================================================= */
 #available .span_1_of_2 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+#datepick {
+  z-index: 900;
+}
+.datepicker {
+  width: 17em;
+  padding: .2em .2em 0;
+  display: none;
+}
+
+/*  ACTIVITY   ============================================================================= */
+#available {
   padding-left: 0px;
   padding-right: 0px;
 }

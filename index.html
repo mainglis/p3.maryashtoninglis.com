@@ -105,8 +105,20 @@
 
 				<br><br>
 
-				<label for='group_size'>Group Size:</label>
-				<input id='group_size' name='group_size' class='validate[required]' type='text'>
+			<!-- 	<label for='group_size'>Group Size:</label>
+				<input id='group_size' name='group_size' class='validate[required]' type='text'> -->
+				<div id='group_size_container'>
+					<label for='group_size'>Group Size</label>
+					<select id="group_size" name="group_size" class='validate[required]'>
+							<option value="" class='validate[required]'></option>
+							<option value="2" class='validate[required]'>2</option>
+							<option value="3" class='validate[required]'>3</option>
+							<option value="4" class='validate[required]'>4</option>
+							<option value="5" class='validate[required]'>5</option>
+							<option value="6" class='validate[required]'>6</option>
+							<option value="7" class='validate[required]'>7</option>
+					</select>&nbsp;
+				</div>
 
 				<br><br>
 
@@ -159,7 +171,7 @@
 	<div class='grid-row' id='type_container'>
 <!-- 	<div id='customize_individual'> -->
 	<div class='grid-col span_1_of_2'>
-		<label for='city'>City</label>
+		<label for='city'>City</label><br>
 		<input id='city' name='city' class='validate[required]' type='text'>
 		
 		<br><br>
@@ -229,14 +241,31 @@
 			<input id='zip' name='zip' class='validate[required]' type='text'>
 		</div>
 </div> <!-- <div class='grid-col span_1_of_2'> -->
+
+
+<div class='clear'></div>
+
 </section> <!-- close <section id='shared_address'> -->
 
 <section id='available'>
-	<label for="from">From</label>
-	<input type="text" id="from" name="from">
-	<label for="to">to</label>
-	<input type="text" id="to" name="to">
+	<div id='datepick'>
+		<label for="from">From</label>
+		<input type="text" id="from" name="from">
+		<label for="to">to</label>
+		<input type="text" id="to" name="to">
+	</div>
+	<div class='clear'></div>
 </section> <!-- close <section id='available'> -->
+
+<section id='activity'>
+	<div id='activity'>
+		<button>A button element</button>
+		 
+		<input type="submit" value="A submit button">
+		 
+		<a href="#">An anchor</a>
+	</div> <!-- close activity div -->
+</section>
 
 </div> <!-- close wrap -->
 

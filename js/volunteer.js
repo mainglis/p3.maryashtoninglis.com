@@ -33,14 +33,30 @@ $('input[name=type').change(function() {
 
 });
 
+//Scrolling individual
+
+$('html, body').animate({scrollTop:$('#individual-wrapper').position().top}, 'slow');
+
+$("#individual-wrapper").click(function(){
+   $('html, body').animate({scrollTop:$('#customize_individual').position().top}, 'slow');
+});
+
+//Scrolling group
+
+$('html, body').animate({scrollTop:$('#group-wrapper').position().top}, 'slow');
+
+$("#group-wrapper").click(function(){
+$('html, body').animate({scrollTop:$('#customize_group').position().top}, 'slow');
+});
+
 // If you want a <button/> with an id of myButton that when clicked will cause you to scroll to a <div/> with and id of myDiv over the course of half a second:
 
-// $('#individual').click(function(){
-//     $('html, body').animate({
-//         scrollTop: $( $.attr(this, '#customize') ).offset().top
-//     }, 500);
-//     return false;
-// });
+ // $('#individual').click(function(){
+ //     $('html, body').animate({
+ //         scrollTop: $( $.attr(this, '#customize') ).offset().top
+ //     }, 500);
+ //    return false;
+ // });
 
 // $('#individual').click(function() {
 //    //optionally remove the 500 (which is time in milliseconds) of the
@@ -48,12 +64,39 @@ $('input[name=type').change(function() {
 //    $.scrollTo($('#customize'), 500);
 // });
 
-function scrollToAnchor(aid){
-    var aTag = $("a[name='"+ aid +"']");
-    $('html,body').animate({scrollTop: aTag.offset().top},'slow');
-}
+// function scrollToAnchor(aid){
+//     var aTag = $("a[name='"+ aid +"']");
+//     $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+// }
 
-$("#individual").click(function() {
-   scrollToAnchor('#customize');
-});
+// $("#individual").click(function() {
+//    scrollToAnchor('#customize');
+// });
 
+//Buttons
+$(function() {
+    $( "input[type=submit], a, button" )
+      .button()
+      .click(function( event ) {
+        event.preventDefault();
+      });
+  });
+
+$(function() {
+    $( "#from" ).datepicker({
+      defaultDate: "+1w",
+      changeMonth: true,
+      numberOfMonths: 1,
+      onClose: function( selectedDate ) {
+        $( "#to" ).datepicker( "option", "minDate", selectedDate );
+      }
+    });
+    $( "#to" ).datepicker({
+      defaultDate: "+1w",
+      changeMonth: true,
+      numberOfMonths: 1,
+      onClose: function( selectedDate ) {
+        $( "#from" ).datepicker( "option", "maxDate", selectedDate );
+      }
+    });
+  });
