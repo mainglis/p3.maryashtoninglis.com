@@ -41,21 +41,62 @@ h4 {
   font-size: 15px;
   font-size: 1.5rem;
 }
+.label {
+  font-size: 12px;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+label {
+  font-size: 12px;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+table {
+  /*width: 100%;*/
 
+  border-collapse: collapse;
+}
+table td, table th {
+  border: 1px solid #ddd;
+  color: #444;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 21px;
+  padding: 5px 8px;
+}
+table th {
+  border-color: #aaa;
+  border-width: 1px;
+  border-style: solid;
+  background-color: #76dee4;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-size: 1.4rem;
+  color: #000;
+  font-weight: bold;
+  text-align: left;
+  padding: 3px 8px;
+  white-space: nowrap;
+}
+.clear {
+  clear: both;
+}
 /*-------------------------------------------------------------------------------------------------
 Layout
 -------------------------------------------------------------------------------------------------*/
 #wrap {
 	width:960px;
 	margin:0px auto;
-  background-image: url('images/photo.jpg');
-  /*background-color: #B0C4DE; */
+  /*background-image: url('images/photo.jpg');*/
+  background-color: #B0C4DE; 
 }
 #header {
   text-align: center;
   /*background-color: #DDA0DD;*/
 }
-#choose {
+#pick {
   text-align: center;
   width: 960px;
   /*background-image: url('images/photo.jpg');*/
@@ -65,4 +106,92 @@ Layout
 	width:425px;
 	margin-right:50px;
 	float:left;
+}
+.grid-group:before, .grid-group:after {
+  content: "";
+  display: table;
+}
+.grid-group:after {
+  clear: both;
+}
+.grid-group {
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */
+
+}
+.grid-col {
+  display: block;
+  float: left;
+  margin-top: 1%;
+  margin-right: 0;
+  margin-bottom: 1%;
+  margin-left: 1.6%;
+  padding-bottom: 10px;
+}
+.grid-col:first-child {
+  margin-left: 0;
+}
+/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
+@media only screen and (max-width: 480px) {
+  .grid-col {
+    margin: 1% 0 1% 0%;
+  }
+}
+/*  GRID OF TWO   ============================================================================= */
+.span_2_of_2 {
+  width: 100%;
+}
+.span_1_of_2 {
+  width: 49.2%;
+}
+/*-------------------------------------------------------------------------------------------------
+Group vs. Individual Choice
+customize-individual
+customize-group
+-------------------------------------------------------------------------------------------------*/
+#customize h3 {
+  margin-bottom: 25px;
+}
+#customize .span_1_of_4 {
+  background-color: #f2f2f2;
+  border: 1px solid #cccccc;
+  text-align: center;
+  padding-top: 10px;
+  cursor: pointer;
+}
+#customize .span_1_of_4label {
+  display: block;
+}
+#customize .span_1_of_2 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#customize h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+#customize #state_container {
+  float: left;
+  width: 40%;
+}
+#customize #zip_container {
+  float: left;
+  width: 60%;
+}
+#customize #zip {
+  width: 100%;
+}
+#customize textarea {
+  font-size: 12px;
+  font-size: 1.2rem;
+  width: 100%;
+}
+#customize .message-individual {
+  height: 175px;
+}
+#customize .message-group {
+  height: 245px;
+}
+#customize input[type=text] {
+  width: 100%;
 }
