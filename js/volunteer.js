@@ -2,15 +2,6 @@
 Customize
 -------------------------------------------------------------------------------------------------*/
 
-/* 
-For validation purposes, we don't want both these forms in the page at the same time
-So on page load, save them in a variable, then default to the ship form 
-(i.e. replace the entire contents of type_container with ship)
-*/
-
-// Save
-
-// MINE: ship - individual and instant - group 
 $('textarea[name=message-skills').html("Experience in a soup kitchen? With web development? Event marketing? Generally great people skills? Really awesome baker?");
 $('textarea[name=message-reason').html("Personal experience? Curiosity? Spare time?");
 $('textarea[name=message-days').html("Please list the days and times that you are available.");
