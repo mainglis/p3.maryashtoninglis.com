@@ -343,15 +343,36 @@
 	<div class='grid-row' id='type_act_container'>
 		
 		<div id='customize_sk'>
-			<div class='grid-col span_1_of_2'>
+			<div class='grid-col span_1_of_5'>
 				<p>This is where you can describe the SK</p>
 			</div>
 		</div> <!-- close customize_sk -->
 
 		<div id='customize_ct'>
 			
-			<div class='grid-col span_1_of_2'>
+			<div class='grid-col span_1_of_5'>
 				<p>This is where you can describe CT</p>
+			</div>
+		</div> <!-- close customize_ct -->
+
+		<div id='customize_mg'>
+			
+			<div class='grid-col span_1_of_5'>
+				<p>This is where you can describe McKinley</p>
+			</div>
+		</div> <!-- close customize_ct -->
+
+		<div id='customize_it'>
+			
+			<div class='grid-col span_1_of_5'>
+				<p>This is where you can describe IT</p>
+			</div>
+		</div> <!-- close customize_ct -->
+
+		<div id='customize_arts'>
+			
+			<div class='grid-col span_1_of_5'>
+				<p>This is where you can describe the Arts</p>
 			</div>
 		</div> <!-- close customize_ct -->
 
@@ -391,8 +412,39 @@
 
 <!-- ______Checklists___________________________________________________ -->
 
-<section id='checklist'>
-	<img src="images/checklist.gif">
+<section id='last'>
+	<img src="images/last.gif">
+	
+	<!-- <form action="">
+	<input type="checkbox" name="vehicle" value="Bike">I have a bike<br>
+	<input type="checkbox" name="vehicle" value="Car">I have a car 
+	</form>
+	<label for="spinner">Select a value:</label>
+	 <input id="spinner" name="value"> -->
+	 <label for='court'>Are you doing court mandated community service?</label>
+	 <select id="court" name="court" class='validate[required]'>
+	 		<option value="" class='validate[required]'></option>
+	 		<option value="yes" class='validate[required]'>Yes</option>
+	 		<option value="no" class='validate[required]'>No</option>
+	 </select>&nbsp;
+
+	 <br><br>
+
+	 <label for='school'>Are you doing school mandated community service?</label>
+	 <select id="school" name="school" class='validate[required]'>
+	 		<option value="" class='validate[required]'></option>
+	 		<option value="yes" class='validate[required]'>Yes</option>
+	 		<option value="no" class='validate[required]'>No</option>
+	 </select>&nbsp;
+
+	 <br><br>
+
+	 <label for='hours'>If you answered "yes" to either of the above questions, how many total hours do you need?</label>
+	 <input id='hours' name='hours' type='text'>
+
+	 <br><br>
+
+
 
 	<div class='clear'></div>
 </section>

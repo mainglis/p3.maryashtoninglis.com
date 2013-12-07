@@ -149,3 +149,8 @@ $('html, body').animate({scrollTop:$('#customize_sk').position().top}, 'slow');
 // $("#ct-wrapper").click(function(){
 // $('html, body').animate({"left": -($('#customize_ct').position().left}, 600) ;
 // });
+
+$(function() {
+    var spinner = $( "#spinner" ).spinner();
+ 	$( "button" ).button();
+   });
