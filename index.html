@@ -38,7 +38,7 @@
 		
 		<div id='group-wrapper' class='grid-col span_1_of_2'>
 			<input type='radio' name='type' value='group' id='group'> 
-			<label for='group'>Group<p><img src="images/moreThanOne.gif" height="200px" width="200px"></p></label>
+			<label for='group'>Group<p><img src="images/2plus.gif" height="200px" width="250px"></p></label>
 		</div>
 			
 	</div> <!-- close grid-row' -->
@@ -49,8 +49,6 @@
 <br><br>
 <section id='customize'>
 
-	<!-- <h2>General Contact Information</h2> -->
-	
 	<div class='grid-row' id='type_container'>
 		<div id='customize_individual'>
 			<div class='grid-col span_1_of_2'>
@@ -69,8 +67,7 @@
 				<input id='preferred_name' name='preferred_name' type='text'>
 				
 				<br><br>
-			</div>
-			<div class='grid-col span_1_of_2'>
+			
 				<label for='email'>Email:</label>
 				<input id='email' name='sender_email' class='validate[required]' type='text'>
 
@@ -80,6 +77,8 @@
 				<input id='phone' name='phone' class='validate[required]' type='text'>
 
 				<br><br>
+				</div>
+				<div class='grid-col span_1_of_2'>
 
 				<label for='address_1'>Permanent Street Address</label>
 				<input id='address_1' name='address_1' class='validate[required]' type='text'>
@@ -90,8 +89,75 @@
 				<input id='address_2' name='address_2' type='text'>
 				
 				<br><br>
-<!-- ____________________________Break here for standard rest of form _______________________________________________ -->
+				<label for='city'>City</label><br>
+				<input id='city' name='city' class='validate[required]' type='text'>
+				
+				<br><br>
 
+				<div id='state_container'>
+					<label for='state'>State</label>
+					<select id="state" name="state" class='validate[required]'>
+							<option value="" class='validate[required]'></option>
+							<option value="AL" class='validate[required]'>AL</option>
+							<option value="AK" class='validate[required]'>AK</option>
+							<option value="AZ" class='validate[required]'>AZ</option>
+							<option value="AR" class='validate[required]'>AR</option>
+							<option value="CA" class='validate[required]'>CA</option>
+							<option value="CO" class='validate[required]'>CO</option>
+							<option value="CT" class='validate[required]'>CT</option>
+							<option value="DE" class='validate[required]'>DE</option>
+							<option value="DC" class='validate[required]'>DC</option>
+							<option value="FL" class='validate[required]'>FL</option>
+							<option value="GA" class='validate[required]'>GA</option>
+							<option value="HI" class='validate[required]'>HI</option>
+							<option value="ID" class='validate[required]'>ID</option>
+							<option value="IL" class='validate[required]'>IL</option>
+							<option value="IN" class='validate[required]'>IN</option>
+							<option value="IA" class='validate[required]'>IA</option>
+							<option value="KS" class='validate[required]'>KS</option>
+							<option value="KY" class='validate[required]'>KY</option>
+							<option value="LA" class='validate[required]'>LA</option>
+							<option value="ME" class='validate[required]'>ME</option>
+							<option value="MD" class='validate[required]'>MD</option>
+							<option value="MA" class='validate[required]'>MA</option>
+							<option value="MI" class='validate[required]'>MI</option>
+							<option value="MN" class='validate[required]'>MN</option>
+							<option value="MS" class='validate[required]'>MS</option>
+							<option value="MO" class='validate[required]'>MO</option>
+							<option value="MT" class='validate[required]'>MT</option>
+							<option value="NE" class='validate[required]'>NE</option>
+							<option value="NV" class='validate[required]'>NV</option>
+							<option value="NH" class='validate[required]'>NH</option>
+							<option value="NJ" class='validate[required]'>NJ</option>
+							<option value="NM" class='validate[required]'>NM</option>
+							<option value="NY" class='validate[required]'>NY</option>
+							<option value="NC" class='validate[required]'>NC</option>
+							<option value="ND" class='validate[required]'>ND</option>
+							<option value="OH" class='validate[required]'>OH</option>
+							<option value="OK" class='validate[required]'>OK</option>
+							<option value="OR" class='validate[required]'>OR</option>
+							<option value="PA" class='validate[required]'>PA</option>
+							<option value="RI" class='validate[required]'>RI</option>
+							<option value="SC" class='validate[required]'>SC</option>
+							<option value="SD" class='validate[required]'>SD</option>
+							<option value="TN" class='validate[required]'>TN</option>
+							<option value="TX" class='validate[required]'>TX</option>
+							<option value="UT" class='validate[required]'>UT</option>
+							<option value="VT" class='validate[required]'>VT</option>
+							<option value="VA" class='validate[required]'>VA</option>
+							<option value="WA" class='validate[required]'>WA</option>
+							<option value="WV" class='validate[required]'>WV</option>
+							<option value="WI" class='validate[required]'>WI</option>
+							<option value="WY" class='validate[required]'>WY</option>
+					</select>&nbsp;
+				</div>
+
+				<br><br>
+
+				<div id='zip_container'>
+					<label for='zip'>Zip</label>
+					<input id='zip' name='zip' class='validate[required]' type='text'>
+				</div>
 
 			</div> <!-- <div class='grid-col span_1_of_2'> -->
 		</div> <!-- close <div id='customize_individual'> --> 	
@@ -136,13 +202,13 @@
 				<input id='contact_preferred_name' name='contact_preferred_name' type='text'>
 				
 				<br><br>
-			</div> <!-- <div class='grid-col span_1_of_2'> -->
-			<div class='grid-col span_1_of_2'>
+			
 				<label for='contact_email'>Contact Email:</label>
 				<input id='contact_email' name='contact_email' class='validate[required]' type='text'>
 
 				<br><br>
-
+			</div> <!-- <div class='grid-col span_1_of_2'> -->
+			<div class='grid-col span_1_of_2'>
 				<label for='contact_phone'>Contact Phone (please use a phone number that will be reachable on the day of volunteer activity):</label>
 				<input id='contact_phone' name='contact_phone' class='validate[required]' type='text'>
 
@@ -157,115 +223,186 @@
 				<input id='organization_address_2' name='organization_address_2' type='text'>
 
 				<br><br>
+
+				<label for='city'>City</label><br>
+				<input id='city' name='city' class='validate[required]' type='text'>
 				
-			
-			
+				<br><br>
+
+				<div id='state_container'>
+					<label for='state'>State</label>
+					<select id="state" name="state" class='validate[required]'>
+							<option value="" class='validate[required]'></option>
+							<option value="AL" class='validate[required]'>AL</option>
+							<option value="AK" class='validate[required]'>AK</option>
+							<option value="AZ" class='validate[required]'>AZ</option>
+							<option value="AR" class='validate[required]'>AR</option>
+							<option value="CA" class='validate[required]'>CA</option>
+							<option value="CO" class='validate[required]'>CO</option>
+							<option value="CT" class='validate[required]'>CT</option>
+							<option value="DE" class='validate[required]'>DE</option>
+							<option value="DC" class='validate[required]'>DC</option>
+							<option value="FL" class='validate[required]'>FL</option>
+							<option value="GA" class='validate[required]'>GA</option>
+							<option value="HI" class='validate[required]'>HI</option>
+							<option value="ID" class='validate[required]'>ID</option>
+							<option value="IL" class='validate[required]'>IL</option>
+							<option value="IN" class='validate[required]'>IN</option>
+							<option value="IA" class='validate[required]'>IA</option>
+							<option value="KS" class='validate[required]'>KS</option>
+							<option value="KY" class='validate[required]'>KY</option>
+							<option value="LA" class='validate[required]'>LA</option>
+							<option value="ME" class='validate[required]'>ME</option>
+							<option value="MD" class='validate[required]'>MD</option>
+							<option value="MA" class='validate[required]'>MA</option>
+							<option value="MI" class='validate[required]'>MI</option>
+							<option value="MN" class='validate[required]'>MN</option>
+							<option value="MS" class='validate[required]'>MS</option>
+							<option value="MO" class='validate[required]'>MO</option>
+							<option value="MT" class='validate[required]'>MT</option>
+							<option value="NE" class='validate[required]'>NE</option>
+							<option value="NV" class='validate[required]'>NV</option>
+							<option value="NH" class='validate[required]'>NH</option>
+							<option value="NJ" class='validate[required]'>NJ</option>
+							<option value="NM" class='validate[required]'>NM</option>
+							<option value="NY" class='validate[required]'>NY</option>
+							<option value="NC" class='validate[required]'>NC</option>
+							<option value="ND" class='validate[required]'>ND</option>
+							<option value="OH" class='validate[required]'>OH</option>
+							<option value="OK" class='validate[required]'>OK</option>
+							<option value="OR" class='validate[required]'>OR</option>
+							<option value="PA" class='validate[required]'>PA</option>
+							<option value="RI" class='validate[required]'>RI</option>
+							<option value="SC" class='validate[required]'>SC</option>
+							<option value="SD" class='validate[required]'>SD</option>
+							<option value="TN" class='validate[required]'>TN</option>
+							<option value="TX" class='validate[required]'>TX</option>
+							<option value="UT" class='validate[required]'>UT</option>
+							<option value="VT" class='validate[required]'>VT</option>
+							<option value="VA" class='validate[required]'>VA</option>
+							<option value="WA" class='validate[required]'>WA</option>
+							<option value="WV" class='validate[required]'>WV</option>
+							<option value="WI" class='validate[required]'>WI</option>
+							<option value="WY" class='validate[required]'>WY</option>
+					</select>&nbsp;
+				</div>
+
+				<br><br>
+
+				<div id='zip_container'>
+					<label for='zip'>Zip</label>
+					<input id='zip' name='zip' class='validate[required]' type='text'>
+				</div>
 
 			</div> <!-- <div class='grid-col span_1_of_2'> -->
 		</div> <!-- close <div id='customize_group'> -->
 	</div> <!-- close <div class='grid-row' id='type_container'> -->
+	<div class='clear'></div>
 </section> <!-- close <section id='customize'> -->
 
+<!-- ______Choose Activities___________________________________________________ -->
+<section id='choose_activity'>
+	<img src="images/activity.gif">
+	<div class='grid-row'>
+		<div id='activity_labels'>	
+			
+		<div id='sk-wrapper' class='grid-col span_1_of_5'>
+			<!-- <button>A button element</button> -->
+			<input CHECKED type='radio' name='type' value='sk' id='sk'> 
+			<label for='sk'>Soup Kitchen and Food Pantry</label> 
+		</div>
 
-<section id='shared_address'>
-	<div class='grid-row' id='type_container'>
-<!-- 	<div id='customize_individual'> -->
-	<div class='grid-col span_1_of_2'>
-		<label for='city'>City</label><br>
-		<input id='city' name='city' class='validate[required]' type='text'>
+		<div id='ct-wrapper' class='grid-col span_1_of_5'>
+			<input type='radio' name='type' value='ct' id='ct'> 
+			<label for='ct'>Community Tables</label>
+		</div>
+
+		<div id='mg-wrapper' class='grid-col span_1_of_5'>
+			<input type='radio' name='type' value='mg' id='mg'> 
+			<label for='mg'>McKinley Garden</label>
+		</div>
+
+		<div id='it-wrapper' class='grid-col span_1_of_5'>
+			<input type='radio' name='type' value='it' id='it'> 
+			<label for='it'>Web and Data Management</label>
+		</div>
+
+		<div id='arts-wrapper' class='grid-col span_1_of_5'>
+			<input type='radio' name='type' value='arts' id='arts'> 
+			<label for='arts'>Arts and Special Events</label>
+		</div>
+			
+	</div> <!-- close grid-row' -->
+
+	<div class='clear'></div>
+
+</section>
+<!-- ______Activity Custom Content___________________________________________________ -->
+<section id='customize_activity'>
+	
+	<div class='grid-row' id='type_act_container'>
 		
-		<br><br>
+		<div id='customize_sk'>
+			<div class='grid-col span_1_of_2'>
+				<p>This is where you can describe the SK</p>
+			</div>
+		</div> <!-- close customize_sk -->
 
-		<div id='state_container'>
-			<label for='state'>State</label>
-			<select id="state" name="state" class='validate[required]'>
-					<option value="" class='validate[required]'></option>
-					<option value="AL" class='validate[required]'>AL</option>
-					<option value="AK" class='validate[required]'>AK</option>
-					<option value="AZ" class='validate[required]'>AZ</option>
-					<option value="AR" class='validate[required]'>AR</option>
-					<option value="CA" class='validate[required]'>CA</option>
-					<option value="CO" class='validate[required]'>CO</option>
-					<option value="CT" class='validate[required]'>CT</option>
-					<option value="DE" class='validate[required]'>DE</option>
-					<option value="DC" class='validate[required]'>DC</option>
-					<option value="FL" class='validate[required]'>FL</option>
-					<option value="GA" class='validate[required]'>GA</option>
-					<option value="HI" class='validate[required]'>HI</option>
-					<option value="ID" class='validate[required]'>ID</option>
-					<option value="IL" class='validate[required]'>IL</option>
-					<option value="IN" class='validate[required]'>IN</option>
-					<option value="IA" class='validate[required]'>IA</option>
-					<option value="KS" class='validate[required]'>KS</option>
-					<option value="KY" class='validate[required]'>KY</option>
-					<option value="LA" class='validate[required]'>LA</option>
-					<option value="ME" class='validate[required]'>ME</option>
-					<option value="MD" class='validate[required]'>MD</option>
-					<option value="MA" class='validate[required]'>MA</option>
-					<option value="MI" class='validate[required]'>MI</option>
-					<option value="MN" class='validate[required]'>MN</option>
-					<option value="MS" class='validate[required]'>MS</option>
-					<option value="MO" class='validate[required]'>MO</option>
-					<option value="MT" class='validate[required]'>MT</option>
-					<option value="NE" class='validate[required]'>NE</option>
-					<option value="NV" class='validate[required]'>NV</option>
-					<option value="NH" class='validate[required]'>NH</option>
-					<option value="NJ" class='validate[required]'>NJ</option>
-					<option value="NM" class='validate[required]'>NM</option>
-					<option value="NY" class='validate[required]'>NY</option>
-					<option value="NC" class='validate[required]'>NC</option>
-					<option value="ND" class='validate[required]'>ND</option>
-					<option value="OH" class='validate[required]'>OH</option>
-					<option value="OK" class='validate[required]'>OK</option>
-					<option value="OR" class='validate[required]'>OR</option>
-					<option value="PA" class='validate[required]'>PA</option>
-					<option value="RI" class='validate[required]'>RI</option>
-					<option value="SC" class='validate[required]'>SC</option>
-					<option value="SD" class='validate[required]'>SD</option>
-					<option value="TN" class='validate[required]'>TN</option>
-					<option value="TX" class='validate[required]'>TX</option>
-					<option value="UT" class='validate[required]'>UT</option>
-					<option value="VT" class='validate[required]'>VT</option>
-					<option value="VA" class='validate[required]'>VA</option>
-					<option value="WA" class='validate[required]'>WA</option>
-					<option value="WV" class='validate[required]'>WV</option>
-					<option value="WI" class='validate[required]'>WI</option>
-					<option value="WY" class='validate[required]'>WY</option>
-			</select>&nbsp;
-		</div>
-
-		<br><br>
-
-		<div id='zip_container'>
-			<label for='zip'>Zip</label>
-			<input id='zip' name='zip' class='validate[required]' type='text'>
-		</div>
-</div> <!-- <div class='grid-col span_1_of_2'> -->
-
+		<div id='customize_ct'>
+			
+			<div class='grid-col span_1_of_2'>
+				<p>This is where you can describe CT</p>
+			</div>
+		</div> <!-- close customize_ct -->
 
 <div class='clear'></div>
+</section>
 
-</section> <!-- close <section id='shared_address'> -->
+<!-- ______Availability___________________________________________________ -->
 
 <section id='available'>
-	<div id='datepick'>
+	<img src="images/availability.gif">
+	<div id='datepick' class='grid-col span_1_of_2'>
 		<label for="from">From</label>
 		<input type="text" id="from" name="from">
 		<label for="to">to</label>
 		<input type="text" id="to" name="to">
 	</div>
+	<div id='days' class='grid-col span_1_of_2'>
+		<label for='message'>Days and Times</label><br>
+		<!-- <input type="message" id="days" name="days"> -->
+		<textarea type='message' class='message-days' name='message-days'></textarea><br>
+	</div>
 	<div class='clear'></div>
 </section> <!-- close <section id='available'> -->
+<!-- ______About___________________________________________________ -->
+<section id='about'>
+	<img src="images/about.gif">
+	<div class='grid-row'>
+		<label for='message'>What skills do you have that you think would be relevant to your volunteer experience?</label><br>
+		<textarea id='message' class='message-skills' name='message-skills'></textarea><br>
+	</div>
+	<div class='grid-row'>
+		<label for='message'>What motivates you to want to volunteer with us?</label><br>
+		<textarea id='message' class='message-reason' name='message-reason'></textarea><br>
+	</div>
+	<div class='clear'></div>
+</section> <!-- close <section id='about'> -->
 
-<section id='activity'>
-	<div id='activity'>
-		<button>A button element</button>
-		 
-		<input type="submit" value="A submit button">
-		 
-		<a href="#">An anchor</a>
-	</div> <!-- close activity div -->
+<!-- ______Checklists___________________________________________________ -->
+
+<section id='checklist'>
+	<img src="images/checklist.gif">
+
+	<div class='clear'></div>
 </section>
+
+<!-- ______Submit___________________________________________________ -->
+<section id='submit'>
+	
+		<p style="text-align:center;"><input type="submit" value="Sign me up!"></p>
+		 
+</section> 
 
 </div> <!-- close wrap -->
 
